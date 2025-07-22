@@ -7,7 +7,7 @@
                         <v-card elevation="4" class="pa-6 gradient-border" style="border-radius: 20px;">
                             <v-card-title class="text-h5" align="center">
                                 <v-img
-                                        src="/images/refund.png"
+                                        src="/images/user.png"
                                         alt="refund"
                                         max-height="100"
                                         max-width="80"

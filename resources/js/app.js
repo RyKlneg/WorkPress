@@ -16,9 +16,11 @@ const vuetify = createVuetify({
 import { createApp } from 'vue';
 import App from './components/App.vue';
 import Register from './components/Register.vue';
+import Component from './components/Component.vue';
 
 createApp(App).use(vuetify).mount('#app');
 createApp(Register).use(vuetify).mount('#register');
+createApp(Component).use(vuetify).mount('#component');
 
 
 export default vuetify;
