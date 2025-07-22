@@ -19,6 +19,13 @@
                                 <v-form>
                                     <v-text-field
                                         variant="solo"
+                                        v-model="User"
+                                        label="User" required
+                                        prepend-inner-icon="mdi-account"
+                                        >
+                                    </v-text-field>
+                                    <v-text-field
+                                        variant="solo"
                                         v-model="Phone"
                                         label="Phone" required
                                         prepend-inner-icon="mdi-phone"
@@ -31,13 +38,15 @@
                                         prepend-inner-icon="mdi-lock"
                                         >
                                     </v-text-field>
-                                    <v-btn
-                                        class="mb-2"
-                                        variant="plain"
-                                        color="white">
-                                        Sign up
-                                    </v-btn>
-                                    <a href="/register">
+                                    <a href="/">
+                                        <v-btn
+                                            class="mb-2"
+                                            variant="plain"
+                                            color="white">
+                                            Sign up
+                                        </v-btn>
+                                    </a>
+                                    <a href="/component">
                                         <v-btn
                                             class="mb-2"
                                             variant="plain"
@@ -59,14 +68,11 @@
         </div>
     </v-app>
 </template>
-
 <script>
     export default {
-        name: 'App',
+        name: 'Register',
         data() {
             return {
-                Phone: '',
-                Password: ''
             };
         },
     };
@@ -152,3 +158,4 @@
 
 
 </style>
+
